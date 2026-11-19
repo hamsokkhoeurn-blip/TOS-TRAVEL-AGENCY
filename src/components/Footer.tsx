@@ -203,11 +203,11 @@ export default function Footer() {
             <h2 className="font-display text-lg font-bold text-white">Book Your Holiday</h2>
             <ul className="mt-5 space-y-4 text-sm">
               <li>
-                <a href="tel:0716052026" className="flex items-center gap-3 text-white/90 hover:text-gold-400">
+                <a href="tel:+855716052026" className="flex items-center gap-3 text-white/90 hover:text-gold-400">
                   <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold-400 text-black">
                     <Phone className="h-4 w-4" />
                   </span>
-                  071 605 2026
+                  +855 (0)71 605 2026
                 </a>
               </li>
               <li>
