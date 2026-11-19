@@ -4,6 +4,7 @@ import {
   MapPin,
   ChevronRight,
 } from 'lucide-react';
+import MapEmbed from './MapEmbed';
 
 const navigationLinks = [
   { label: 'Home', href: '#top' },
@@ -140,13 +141,7 @@ export default function Footer() {
               <span>Krong Siem Reap, Cambodia</span>
             </p>
             <div className="mt-5 overflow-hidden rounded-sm">
-              <iframe
-                title="Map of Krong Siem Reap, Cambodia"
-                src="https://maps.google.com/maps?q=Krong%20Siem%20Reap%2C%20Cambodia&t=&z=14&ie=UTF8&iwloc=&output=embed"
-                className="h-44 w-full border-0"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
+              <MapEmbed query="Krong Siem Reap, Cambodia" title="Map of Krong Siem Reap, Cambodia" className="h-44 w-full border-0" />
             </div>
             <a
               href="https://maps.app.goo.gl/knUvz7R7JEakgb3f9"

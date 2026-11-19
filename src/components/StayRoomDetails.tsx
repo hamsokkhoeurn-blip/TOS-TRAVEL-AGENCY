@@ -17,6 +17,7 @@ import {
   X,
 } from 'lucide-react';
 import { roomTypeGuests, roomTypeName, roomTypePrice, roomTypePriceLabel, type Hotel } from '../lib/types';
+import MapEmbed from './MapEmbed';
 
 type Props = {
   hotel: Hotel;
@@ -203,13 +204,7 @@ export default function StayRoomDetails({ hotel, roomType, onBack, onBook }: Pro
           <section className="mt-10">
             <h2 className="font-display text-2xl font-bold text-brand-950">Location</h2>
             <div className="mt-4 overflow-hidden rounded-2xl border border-clay-100">
-              <iframe
-                title={`Map showing ${hotel.name}`}
-                src={`https://maps.google.com/maps?q=${mapQuery}&output=embed`}
-                className="h-72 w-full border-0"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
+              <MapEmbed query={`${hotel.name}, ${hotel.area}, Siem Reap, Cambodia`} title={`Map showing ${hotel.name}`} className="h-72 w-full border-0" />
             </div>
             <a
               href={`https://www.google.com/maps/search/?api=1&query=${mapQuery}`}
